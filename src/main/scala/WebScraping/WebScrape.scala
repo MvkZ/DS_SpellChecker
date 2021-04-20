@@ -1,14 +1,14 @@
+package WebScraping
 
-
-import scala.language.postfixOps
-import scala.jdk.CollectionConverters._
-import sys.process._
-import java.net.URL
-import java.io.{BufferedWriter, File, FileWriter}
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.select.Elements
 
+import java.io.File
+import java.net.URL
+import scala.jdk.CollectionConverters._
+import scala.language.postfixOps
+import sys.process._
 
 object WebScrape {
   def getLinks(url: String, selector: String) = {
@@ -20,7 +20,7 @@ object WebScrape {
 
   def appendRootUrl(rootUrl: String, links: IndexedSeq[String]) = {
     val loadableLinks = for (link <- links) yield rootUrl + link
-    loadableLinks.foreach((element:String) => println(element))
+    loadableLinks.foreach((element: String) => println(element))
     loadableLinks.toList
   }
 
@@ -37,8 +37,8 @@ object WebScrape {
   def main(args: Array[String]) {
     val rootUrl = "https://www.biorxiv.org"
 
-//    val scrapedUrl = "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports?fbclid=IwAR0bANT83XoqEwhEWnGvjmBSsGjy0S9smn1wP5wTtIyy_Oe78_NtMUATEqA"
-    for( pageNo <- 1 to 1) {
+    //    val scrapedUrl = "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports?fbclid=IwAR0bANT83XoqEwhEWnGvjmBSsGjy0S9smn1wP5wTtIyy_Oe78_NtMUATEqA"
+    for (pageNo <- 1 to 1) {
       val pages = "https://www.biorxiv.org/content/early/recent?page=" + pageNo
       val aLinksContentSelectpr = ".highwire-list a[class=highwire-cite-linked-title]"
       val linksOnPage = getLinks(pages, aLinksContentSelectpr)
