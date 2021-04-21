@@ -2,7 +2,6 @@ import AlgoObjects.Node;
 import AlgoObjects.TernarySearchTree;
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.util.logging.Logger;
 
 public class ConstructWordTree {
@@ -18,8 +17,8 @@ public class ConstructWordTree {
             String token[] = null;
             while ((line = br.readLine()) != null) {
                 token = line.split(" ");
-                // token[0] = actual word.
-                // token[1] = frequency of the word.
+                // token[0] = Word.
+                // token[1] = Word Frequency.
                 tst.insert(token[0], token[1]);
             }
 

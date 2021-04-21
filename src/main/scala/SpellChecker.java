@@ -11,7 +11,7 @@ public class SpellChecker {
     private static Logger log = Logger.getLogger(SpellChecker.class.getName());
     private static TernarySearchTree tst = new TernarySearchTree();
 
-    private int EDIT_LIMIT = 3;
+    private int EDIT_LIMIT = 8;
     private int SUGGESTED_WORD_LIST_LIMIT = 10;
     private String inputString = "";
     private PriorityQueue<PriorityQueueElement> suggestedWords = new PriorityQueue<PriorityQueueElement>(10);
@@ -19,27 +19,6 @@ public class SpellChecker {
     // create the ternary search tree and populate with words.
     static {
         ConstructWordTree.createTree(tst);
-    }
-
-    /**
-     * Get the current value of EDIT_LIMIT
-     *
-     */
-    public int getEditLimit() {
-        return this.EDIT_LIMIT;
-    }
-
-    /**
-     * Set the max distance of output words. Default is 3.
-     *
-     * @param edit_limit
-     */
-    public void setEditLimit(int edit_limit) {
-        if (edit_limit < 0) {
-            log.log(Level.WARNING, "Word edit limit cannot be negative.");
-            return;
-        }
-        this.EDIT_LIMIT = edit_limit;
     }
 
     /**
