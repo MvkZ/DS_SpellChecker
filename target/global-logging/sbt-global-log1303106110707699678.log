@@ -1,0 +1,102 @@
+[debug] > Exec(;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/SAK/AppData/Local/Temp/sbt-structure.xml; session clear-all ; set ideaPort in Global := 57722, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (AdoptOpenJDK Java 11.0.10)
+[debug]       Load.loadUnit: plugins took 17121.6573ms
+[debug]       Load.loadUnit: defsScala took 0.0158ms
+[debug] [Loading] Scanning directory C:\Users\SAK\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\SAK\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1840.2759 ms
+[debug]           Load.resolveProject(global-plugins) took 2388.4693ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\SAK\.sbt\1.0\plugins, plugins: List(<none>))) took 5524.596ms
+[debug] [Loading] Done in C:\Users\SAK\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 7267.2199ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.2551ms
+[debug]     Load.loadUnit(file:/C:/Users/SAK/.sbt/1.0/plugins/, ...) took 25019.9748ms
+[debug]   Load.apply: load took 28702.2939ms
+[debug]   Load.apply: resolveProjects took 523.4995ms
+[debug]   Load.apply: finalTransforms took 12366.0712ms
+[debug]   Load.apply: config.delegates took 1007.4032ms
+[warn] In the last 74 seconds, 9.029 (12.3%) were spent in GC. [Heap: 0.93GB free of 1.07GB, max 1.50GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[debug]   Load.apply: Def.make(settings)... took 22230.885ms
+[debug]   Load.apply: structureIndex took 2634.098ms
+[debug]   Load.apply: mkStreams took 10.401ms
+[info] loading global plugins from C:\Users\SAK\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Forcing garbage collection...
+[warn] In the last 204 seconds, 63.764 (31.4%) were spent in GC. [Heap: 0.22GB free of 0.31GB, max 1.50GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[debug] Load.defaultLoad until apply took 198865.7205ms
+[debug]           Load.loadUnit: plugins took 3059.86ms
+[debug]           Load.loadUnit: defsScala took 0.0069ms
+[debug] [Loading] Scanning directory C:\Users\SAK\IdeaProjects\DS_SpellChecker\project
+[debug]             Load.loadUnit: mkEval took 146.6836ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\SAK\IdeaProjects\DS_SpellChecker\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.9686 ms
+[info] loading settings for project ds_spellchecker-build from idea.sbt ...
+[debug]               Load.resolveProject(ds_spellchecker-build) took 93.0394ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id ds_spellchecker-build, base: C:\Users\SAK\IdeaProjects\DS_SpellChecker\project, plugins: List(<none>))) took 97.4048ms
+[debug] [Loading] Done in C:\Users\SAK\IdeaProjects\DS_SpellChecker\project, returning: (ds_spellchecker-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 2160.2169ms
+[debug]           Load.loadUnit: cleanEvalClasses took 81.3076ms
+[debug]         Load.loadUnit(file:/C:/Users/SAK/IdeaProjects/DS_SpellChecker/project/, ...) took 5303.0369ms
+[debug]       Load.apply: load took 5306.5821ms
+[debug]       Load.apply: resolveProjects took 0.1681ms
+[debug]       Load.apply: finalTransforms took 14.7621ms
+[debug]       Load.apply: config.delegates took 0.6197ms
+[debug]       Load.apply: Def.make(settings)... took 874.0197ms
+[debug]       Load.apply: structureIndex took 68.4325ms
+[debug]       Load.apply: mkStreams took 0.0068ms
+[info] loading project definition from C:\Users\SAK\IdeaProjects\DS_SpellChecker\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 10149.5842ms
+[debug]     Load.loadUnit: defsScala took 0.0105ms
+[debug] [Loading] Scanning directory C:\Users\SAK\IdeaProjects\DS_SpellChecker
+[debug]       Load.loadUnit: mkEval took 0.67ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\SAK\IdeaProjects\DS_SpellChecker, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 2.3029 ms
+[info] loading settings for project ds_spellchecker from build.sbt ...
+[debug]         Load.resolveProject(ds_spellchecker) took 1283.0231ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id ds_spellchecker, base: C:\Users\SAK\IdeaProjects\DS_SpellChecker, plugins: List(<none>))) took 1286.2451ms
+[debug] [Loading] Done in C:\Users\SAK\IdeaProjects\DS_SpellChecker, returning: (ds_spellchecker)
+[debug]     Load.loadUnit: loadedProjectsRaw took 18373.5377ms
+[debug]     Load.loadUnit: cleanEvalClasses took 166.2965ms
+[debug]   Load.loadUnit(file:/C:/Users/SAK/IdeaProjects/DS_SpellChecker/, ...) took 28692.5759ms
+[debug] Load.apply: load took 28698.0074ms
+[debug] Load.apply: resolveProjects took 0.2138ms
+[debug] Load.apply: finalTransforms took 181.0869ms
+[debug] Load.apply: config.delegates took 0.416ms
+[debug] Load.apply: Def.make(settings)... took 1305.0508ms
+[debug] Load.apply: structureIndex took 403.6523ms
+[debug] Load.apply: mkStreams took 0.0075ms
+[warn] Discarding 1 session setting.  Use 'session save' to persist session settings.
+[info] set current project to DS_SpellChecker (in build file:/C:/Users/SAK/IdeaProjects/DS_SpellChecker/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers", None, None)
+[info] Defining Global / sbtStructureOptions
+[info] The new value will be used by Global / ssOptions
+[debug] Defining 
+[debug] 	Global / sbtStructureOptions
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Global / ssOptions
+[info] Reapplying settings...
+[info] set current project to DS_SpellChecker (in build file:/C:/Users/SAK/IdeaProjects/DS_SpellChecker/)
+[debug] > Exec(*/*:dumpStructureTo C:/Users/SAK/AppData/Local/Temp/sbt-structure.xml, None, None)
+[debug] Evaluating tasks: Global / dumpStructureTo
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] Writing structure to C:\Users\SAK\AppData\Local\Temp\sbt-structure.xml...
+[info] Done.

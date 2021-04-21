@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="375.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpellCheckerAppController">
+    <children>
+        <FlowPane prefHeight="39.0" prefWidth="640.0">
+            <children>
+                <TextField fx:id="txtInput" minWidth="-Infinity" prefHeight="29.0" prefWidth="350.0" promptText="Enter word to check">
+                    <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </FlowPane.margin>
+                </TextField>
+                <Button fx:id="btnCorrect" alignment="CENTER_RIGHT" text="Check" textAlignment="CENTER">
+                    <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </FlowPane.margin>
+                </Button>
+            </children>
+        </FlowPane>
+        <TableView fx:id="table" prefHeight="360.0" prefWidth="640.0" tableMenuButtonVisible="false">
+            <columns>
+                <TableColumn fx:id="clmWord" minWidth="-Infinity" prefWidth="540.0" text="Word" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>
